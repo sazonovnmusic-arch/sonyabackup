@@ -1,0 +1,137 @@
+const sectionForm = document.querySelector(".section-form");
+
+function createTimer(element) {
+    const startTime = Date.now();
+    const endTime = startTime + 10 * 60 * 1000;
+
+    function updateTimer() {
+        const remainingTime = endTime - Date.now();
+        const minutes = Math.floor((remainingTime / (1000 * 60)) % 60);
+        const seconds = Math.floor((remainingTime / 1000) % 60);
+        const formattedTime = `${minutes
+            .toString()
+            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+        element.textContent = formattedTime;
+        if (remainingTime <= 0) {
+            clearInterval(timerInterval);
+            element.textContent = "00:00";
+        }
+    }
+    const timerInterval = setInterval(updateTimer, 100);
+    updateTimer();
+}
+const timerElements = document.querySelectorAll(".my-timer-now");
+
+let video = document.querySelector("video");
+
+if (video) {
+    console.log("video найден при загрузке:", video);
+    setupVideoEvents(video);
+} else {
+    const observer = new MutationObserver(function(mutationsList) {
+        mutationsList.forEach(function(mutation) {
+            if (mutation.type === "childList") {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.tagName === "VIDEO") {
+                        console.log("video было добавлено:", node);
+                        video = node;
+                        setupVideoEvents(video);
+                    }
+                });
+            }
+        });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+}
+
+function setEndVideo() {
+    document.querySelector(".section-video").classList.add("none");
+    sectionForm.classList.remove("none");
+    timerElements.forEach((element) => {
+        createTimer(element);
+    });
+    const orderElement = document.getElementById("order");
+    if (orderElement) {
+        orderElement.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+function setupVideoEvents(video) {
+    let flagFormTimeUpdate = false;
+    video.addEventListener("ended", function() {
+        setEndVideo();
+    });
+}
+
+const coments = Array.from(document.querySelectorAll(".coment"));
+const placeComent = document.querySelector(".place-coment");
+
+function showComent() {
+    coments.forEach((elem) => {
+        elem.style.display = "none";
+    });
+
+    placeComent.style.flexDirection = "column-reverse";
+
+    let timeShow = 3000;
+    coments.forEach((elem) => {
+        setTimeout(() => {
+            elem.style.display = "flex";
+            elem.classList.add("animate-show");
+            setTimeout(() => {
+                elem.classList.remove("animate-show");
+            }, 300);
+        }, timeShow);
+        timeShow = timeShow + 3000;
+    });
+}
+
+showComent();
+
+//Дата
+function formatDate(date) {
+    const day = date.getDate().toString().padStart(2, "0");
+    const month = (date.getMonth() + 1).toString().padStart(2, "0");
+    const year = date.getFullYear().toString();
+    return `${day}/${month}/${year}`;
+}
+
+const currentDate = new Date();
+const elements = document.querySelectorAll(".date-now");
+elements.forEach((element) => {
+    element.textContent = formatDate(currentDate);
+});
+
+$("a[href$='#form-wrap']").on("touchend, click", function(e) {
+    e.preventDefault();
+    $('body,html').animate({
+        scrollTop: $('#form-wrap').offset().top - 75
+    }, 400);
+});
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ const orderForms = document.querySelectorAll('form');
+    let isFormSubmitting = false;
+
+    function disableAllSubmitButtons() {
+        orderForms.forEach(form => {
+            const submitButtons = form.querySelectorAll('[type="submit"]');
+            submitButtons.forEach(button => {
+                button.disabled = true;
+                button.setAttribute('style', 'cursor: no-drop !important;');
+                button.style.opacity = 0.5;
+            });
+        });
+    }
+
+    orderForms.forEach(form => {
+        form.addEventListener('submit', function (event) {
+            if (isFormSubmitting) {
+                event.preventDefault();
+                return;
+            }
+            isFormSubmitting = true;
+            disableAllSubmitButtons();
+        });
+    });

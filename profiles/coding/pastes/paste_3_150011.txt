@@ -1,0 +1,357 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Fix&Flex</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer=""></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="js/embed.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="core-title">
+                    Doctors Are Panicking! This 1 Cheap Secret "Triggers" Bone Cell Repair and Saves You From Expensive Surgery in 1 Week!
+                </h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <span id="form-wrap"></span>
+                <section class="section-video">
+                    <div>
+                        <div class="embedpvideo" data-videoid="f2e60887-25cf-4357-ac30-2a09fd2e7489"></div>
+                    </div>
+                </section>
+                <section class="section-form none">
+                    <div class="div-section-form">
+                          <form id="order" action="./lemon.php" method="POST" class="formFb">
+        
+        <!-- === ВСЕ скрытые поля от lemon.php (как в первой форме) === -->
+        <!-- UTM: если страница .html, значения подставит скрипт ниже; если .php — можешь заменить value на <?=$_GET['...']?> -->
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_content" value="">
+        <input type="hidden" name="utm_campaign" value="">
+        <input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="pixel" value="">
+        <input type="hidden" name="clickid" value="{subid}">
+        
+        <input type="hidden" name="validate_phone_enable" value="0">
+        <input type="hidden" name="offer_id" value="39711">
+        <input type="hidden" name="esub" value="-7EBRQCgQAAANyQgN9DgAAE5IfGwADDy-8gWkREQoRCSIRDTIRDVoHbmwyAAAfY3BhcnX_cnRRMThDOUIAA041">
+        <input type="hidden" name="template_name" value="IDD8PaZc5GuuVmH">
+        <input type="hidden" name="country_code" value="MX">
+        <input type="hidden" name="payment_redirect" value="0">
+        <input type="hidden" name="broker_redirect" value="0">
+        <input type="hidden" name="shipment_price" value="0">
+        <input type="hidden" name="total_price" value="890">
+        <input type="hidden" name="price_vat" value="0.0">
+        <input type="hidden" name="shipment_vat" value="0.0">
+        <input type="hidden" name="total_price_wo_shipping" value="890">
+        <input type="hidden" name="price" value="890">
+        <input type="hidden" name="old_price" value="1780">
+        <input type="hidden" name="currency" value="MXN">
+        <input type="hidden" name="package_id" value="0">
+        <input type="hidden" name="package_prices" value="{}">
+        <input type="hidden" name="l" value="b3da38ba282de3b543e52e6750d001b6d8aee007">
+        <input type="hidden" name="7a36e0448c7ca442dfc186d46d1c1ef228890ffe" value="YzQ5NjJkYmM2NTg2MGQ3Yzk3MDI4N2ZiOWZjMTZlNjk2MDU=" />
+        
+        <!-- === Визуальная часть (твой лендинг, классы сохранены) === -->
+        <div class="formFb__container">
+            <p class="formFb__action formFb__text">
+                <b>Hurry!</b> The special offer is about to end.
+            </p>
+            <p class="formFb__counter formFb__text">
+                <b>Update:</b> Only
+                <span class="form-instock red">17</span>
+                pieces left <span class="js-current-date"></span>.
+            </p>
+            <div class="formFb__img">
+                <img src="images/product.webp" alt="" loading="lazy">
+            </div>
+            <div class="formFb__price">
+                <p class="formFb__price--txt formFb__text">
+                    50% DISCOUNT
+                </p>
+                <span class="formFb__price--p">
+                    <span class="oldPriceAndLabelForLandingInfoApi formFb__price--old">
+                        <span class="price-old">1298 ZAR</span>
+                        <span class="currency"></span>
+                    </span>
+                    <span class="priceAndLabelForLandingInfoApi formFb__price--new">
+                        <span class="price-new">649 ZAR</span>
+                        <span class="currency"></span>
+                    </span>
+                </span>
+            </div>
+            <div class="formFb__timer">
+                <p class="formFb__text">Time remaining:</p>
+                <div class="timer" style="color: red">
+                    <span id="timer" class="my-timer-now">10:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="formFb__inputs">
+            <label>Your name:</label>
+            <input class="ss" name="name" placeholder="Name" required="required" autocomplete="name" type="text" minlength="2">
+        </div>
+        <div class="formFb__inputs">
+            <label>Your phone:</label>
+            <input class="pp" name="phone" placeholder="Phone: +27" required="required" value="+27" autocomplete="tel" type="tel" oninput="formatSouthAfricaPhone(this)">
+        </div>
+        <button class="formFb__btn" type="submit">PLACE ORDER</button>
+    </form>
+                    </div>
+                </section>
+                <section class="section-banner-chanels">
+                    <div class="banner-chanels">
+                        <p style="color: #fff">Featured on:</p>
+                        <div>
+                            <img src="images/logo1.png" alt="#" loading="lazy">
+                            <img src="images/logo3.png" alt="#" loading="lazy">
+                            <img src="images/logo2.png" alt="#" loading="lazy">
+                        </div>
+                    </div>
+                </section>
+                <section class="section-coments">
+                    <div class="all-coments">
+                        <p class="text-all-coments">Comments</p>
+                        <hr>
+                        <div class="place-coment">
+                            <div class="coment">
+                                <img class="ava-coment" src="images/m1.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Thabo Nkosi</p>
+                                    <p class="text-coment">
+                                        This method is simply incredible! The pain in my knees is
+                                        completely gone, and now I move without issues... Thank
+                                        you so much! 😊
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>3 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>9</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/m2.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Sipho Mthembu</p>
+                                    <p class="text-coment">
+                                        I recommend this method to everyone! My joints no longer
+                                        hurt, and I feel so much better. Thank you for this
+                                        miracle! 🙏
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>3 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>11</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/w1.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Nomsa Dlamini</p>
+                                    <p class="text-coment">
+                                        I can’t believe how good I feel! Now I can play with my
+                                        grandchildren without back pain. Thank you for this
+                                        method! It’s the best thing that’s happened to me!
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>3 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/w2.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Thandi Ngcobo</p>
+                                    <p class="text-coment">
+                                        This method is amazing! The pain in my back and knees is
+                                        gone. I can’t believe the effect of this gel!
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>3 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>17</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/w3.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Lerato Mokoena</p>
+                                    <p class="text-coment">
+                                        After using this method, my fingers no longer hurt, and I
+                                        can play the piano again 🎹. It’s wonderful!
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>2 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/w4.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Zanele Khumalo</p>
+                                    <p class="text-coment">
+                                        I’m so grateful! This method really works, my back and
+                                        knees no longer hurt. Thank you!
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>3 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>22</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/w5.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Nomvula Mabaso</p>
+                                    <p class="text-coment">
+                                        This method gave my mom a new life! Now she feels young
+                                        and full of energy. Thank you! 😊😊😊
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>2 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>41</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/w6.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Palesa Moloi</p>
+                                    <p class="text-coment">
+                                        JOINT PAIN GONE! This method is the best I’ve ever tried.
+                                        I feel young and full of energy!
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>2 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>40</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/m3.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Jabu Zulu</p>
+                                    <p class="text-coment">
+                                        What a relief! After using this method, I no longer feel
+                                        pain when getting up in the morning. Thank you!
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>2 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>47</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coment">
+                                <img class="ava-coment" src="images/m4.jpg" alt="#" loading="lazy">
+                                <div class="info-coment">
+                                    <p class="name-coment">Mandla Botha</p>
+                                    <p class="text-coment">
+                                        Incredible! After using this method, I feel like new.
+                                        Thank you for restoring my mobility! 👍
+                                    </p>
+                                    <div class="all-buttons-coment">
+                                        <div class="btn-react-coment">
+                                            <p class="react-coment">Like</p>
+                                            <p class="react-coment">Reply</p>
+                                            <p>2 min</p>
+                                        </div>
+                                        <div class="btn-like-coment">
+                                            <img src="images/likes.webp" alt="#" loading="lazy">
+                                            <p>50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script></script>
+    <script src="js/back.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.vitBack(
+            "{current_domain}/{campaign_alias}?fbclid={fbclid}&utm_campaign={utm_campaign}&utm_source={utm_source}&utm_placement={utm_placement}&tax={tax}&a={a}&c={c}&n={n}&utm_code={utm_code}&d=1&o={offer_id}",
+            true
+        );
+    });
+    </script>
+
+</body></html>

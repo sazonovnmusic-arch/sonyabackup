@@ -1,0 +1,51 @@
+<form id="order" action="order.php" method="POST">
+                            <input type="hidden" name="sub1" value="{subid}">
+<input type="hidden" name="sub2" value="Buyers">
+<input type="hidden" name="sub3" value="{offer_id}">
+<input type="hidden" name="tax" value="">
+                            <div id="formFb" class="formFb">
+                                <div class="formFb__container">
+                                    <p class="formFb__action formFb__text">
+                                        <b>Hurry!</b> The special offer is about to end.
+                                    </p>
+                                    <p class="formFb__counter formFb__text">
+                                        <b>Update:</b> Only
+                                        <span class="form-instock red">17</span>
+                                        pieces left <span class="js-current-date"></span>.
+                                    </p>
+                                    <div class="formFb__img">
+                                        <img src="images/product.webp" alt="" loading="lazy">
+                                    </div>
+                                    <div class="formFb__price">
+                                        <p class="formFb__price--txt formFb__text">
+                                            50% DISCOUNT
+                                        </p>
+                                        <span class="formFb__price--p">
+                                            <span class="oldPriceAndLabelForLandingInfoApi formFb__price--old">
+                                                <span class="price-old">1298 ZAR</span>
+                                                <span class="currency"></span>
+                                            </span>
+                                            <span class="priceAndLabelForLandingInfoApi formFb__price--new">
+                                                <span class="price-new">649 ZAR</span>
+                                                <span class="currency"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="formFb__timer">
+                                        <p class="formFb__text">Time remaining:</p>
+                                        <div class="timer" style="color: red">
+                                            <span id="timer" class="my-timer-now">10:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formFb__inputs">
+                                    <label>Your name:</label>
+                                    <input class="ss" name="name" placeholder="Name" required="required" autocomplete="name" type="text">
+                                </div>
+                                <div class="formFb__inputs">
+                                    <label>Your phone:</label>
+                                    <input class="pp" name="phone" placeholder="Phone: +27" required="required" value="" autocomplete="tel" type="tel">
+                                </div>
+                                <button class="formFb__btn" type="submit">PLACE ORDER</button>
+                            </div>
+                        </form>

@@ -1,0 +1,9 @@
+OpenModel.ai provider setup: endpoint `https://api.openmodel.ai`, API mode `codex_responses` (/v1/responses, not /chat/completions). Request uses `"input"` not `"messages"`. Available models include deepseek-v4-flash, kimi-k2.6, gpt-5.4, etc. Profile default configured via hermes setup wizard.
+§
+AI Workspace project: built at ~/ai-workspace with FastAPI Bridge (port 8123) and React UI (port 3000). Bridge reads Hermes profiles from ~/.hermes/profiles/, creates empty state.db sessions with system_prompt/model/billing, then runs `hermes --profile <name> chat -q <msg> --resume <session_id>`. UI has Chat with per-agent session persistence (active session remembered when switching agents), ChatGPT-like session list with date/message count, Kanban (todo/in_progress/done), and Agent Status tabs. Tasks stored in bridge/workspace.db.
+§
+User builds AI Workspace (~/ai-workspace) and expects autonomous implementation of features without asking permission. When adding UI features, preserve existing layout and provide complete end-to-end Bridge+UI changes. User explicitly wants to borrow mechanics from third-party tools (AionUi, ClawFleet) when they are better, but will abandon them if they don't build/run quickly on the VPS.
+§
+Never delete/modify Hermes profiles or their state.db/cron configs without explicit permission. Use throwaway profiles for testing destructive endpoints.
+§
+AI Workspace UI: compact dark (#0a0a0a), sky-blue accent (#0ea5e9), rounded buttons/inputs, square-ish rounded avatars, no pixel/arcade. ChatGPT-style layout: user messages in gray bubble, assistant on plain background. Match shared reference screenshots closely (sizes, spacing, fonts). Code blocks use Fira Code + Atom One Dark highlight.js with explicit language registration. Welcome: "На связи {profile}, чем могу помочь?". History drawer pushes chat, stays open until closed. Provide complete end-to-end Bridge+UI changes autonomously.

@@ -1,0 +1,59 @@
+javascript
+    const sectionForm = document.querySelector(".section-form");
+    
+    function createTimer(element) {
+        const startTime = Date.now();
+        const endTime = startTime + 10 * 60 * 1000;
+    
+        function updateTimer() {
+            const remainingTime = endTime - Date.now();
+            const minutes = Math.floor((remainingTime / (1000 * 60)) % 60);
+            const seconds = Math.floor((remainingTime / 1000) % 60);
+            const formattedTime = `${minutes
+                .toString()
+                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            element.textContent = formattedTime;
+            if (remainingTime <= 0) {
+                clearInterval(timerInterval);
+                element.textContent = "00:00";
+            }
+        }
+        const timerInterval = setInterval(updateTimer, 100);
+        updateTimer();
+    }
+    const timerElements = document.querySelectorAll(".my-timer-now");
+    
+    // ====== ЛОКАЛЬНЫЙ ВИДЕО-ПЛЕЕР (замена embed.js) ======
+    (function initLocalVideo(){
+        document.querySelectorAll('.embedpvideo').forEach(box => {
+            if (box.querySelector('video')) return;
+    
+            box.innerHTML = '';
+            box.style.position = 'relative';
+            box.style.background = '#000';
+            box.style.minHeight = '460px';
+    
+            const videoEl = document.createElement('video');
+            videoEl.src = 'video.mp4';
+            videoEl.muted = true;
+            videoEl.playsInline = true;
+            videoEl.autoplay = true;
+            videoEl.preload = 'auto';
+            videoEl.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;display:block;object-fit:cover;';
+    
+            const overlay = document.createElement('div');
+            overlay.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);display:flex;justify-content:center;align-items:center;cursor:pointer;z-index:2;';
+            overlay.innerHTML = `
+                <div style="text-align:center;color:#fff;font-family:sans-serif;background:rgba(0,61,91,0.85);border:1px solid #fff;padding:22px 40px;border-radius:8px;">
+                    <div style="font-size:20px;font-weight:bold;margin-bottom:16px;">Your video has already started</div>
+                    <div style="width:64px;height:64px;border:2px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">
+                        <svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <div style="font-size:18px;font-weight:bold;">Click to listen</div>
+                </div>
+            `;
+    
+            box.appendChild(videoEl);
+            box.appendChild(overlay);
+    
+            overlay.addEventListener('click', () => {

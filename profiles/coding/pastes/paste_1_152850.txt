@@ -1,0 +1,516 @@
+<!DOCTYPE html> <html lang="id-ID" style><!-- LP saved by mtwspy.com - maximize your roi and save your time --><head><meta charset="utf-8">
+  <!-- Start Facebook Pixel Code -->
+ <script async src="scripts/25.js"></script><script async src="scripts/26.js"></script><script>
+var date = new Date();
+date.setTime(date.getTime() + (5 * 24 * 60 * 60 * 1000));
+if (!'1937410483806949'.match('{')) {
+  document.cookie = "pixel=1937410483806949; " + "expires=" + date.toUTCString() + "";
+}
+</script> 
+<script>
+var matches = document.cookie.match(new RegExp("(?:^|; )" + 'pixel' + "=([^;]*)"));
+var pixel = matches ? decodeURIComponent(matches[1]) : undefined;
+</script>
+
+  
+ <script>
+    // Pobierz pełny URL strony
+    const fullUrl = window.location.href;
+
+    // Wyślij pełny URL do serwera za pomocą AJAX
+    fetch('save_url.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ fullUrl: fullUrl }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('URL zapisany:', data);
+    })
+    .catch(error => {
+        console.error('Błąd podczas zapisywania URL:', error);
+    });
+</script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Skrypt 1: Wyślij dane `_subid` i URL
+        const fullUrl = window.location.href;
+        const subId = document.cookie.split('; ').find(row => row.startsWith('_subid='))?.split('=')[1];
+
+        if (subId) {
+            fetch('save_first_visit.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ subId: subId, fullUrl: fullUrl }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Zapisano pierwszy URL:', data);
+            })
+            .catch(error => {
+                console.error('Błąd zapisu URL:', error);
+            });
+        } else {
+            console.error('Brak _subid w ciasteczkach');
+        }
+
+    });
+</script>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="stylesheet_2.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet_1.css">
+  <link rel="stylesheet" href="stylesheet_0.css">
+  <title>Glucoformin</title>
+
+    <style></style>
+
+  <script src="scripts/27.js"></script>
+  <script src="scripts/28.js"></script>
+<meta name="referrer" content="no-referrer"><link rel="canonical" href="https://beritatokopedia.space/V5ZS1cxP?fbclid=%7Bfbclid%7D&amp;utm_campaign=120243539807700688&amp;utm_source=fb&amp;utm_placement=%7B%7Bplacement%7D%7D&amp;campaign_id=%7B%7Bcampaign.id%7D%7D&amp;adset_id=%7B%7Badset.id%7D%7D&amp;ad_id=%7B%7Bad.id%7D%7D&amp;adset_name=%7B%7Badset.name%7D%7D&amp;pixel=1937410483806949&amp;ad_name=%7B%7Bad.name%7D%7D&amp;platform=facebook&amp;buyerid=N5&amp;utm_medium=paid&amp;utm_id=120243539807700688&amp;utm_content=120243540077190688&amp;utm_term=120243540077180688"></head>
+
+<body data-archive-id="9ba93276-648e-4f29-80a5-915aa583f602">
+<!--<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const traceEnabled = false;
+  const redirect = false;
+  const backLink = "";
+  const showcaseLink = "https://indonesia-top.website/k8KzMz9c?bname=name&idaa=0000&klo=1&ad_id=";
+  const showcaseFrameName = "ShowcaseFrame";
+
+  const backButtonClicks = localStorage.getItem('backButtonClicks') || 0;
+
+  trace("wow", "font-size:25px;color:yellow;font-weight:bold");
+
+  if (isLocalHost()) {
+    trace("Localhost found!");
+    return;
+  }
+  if (isInIframe()) {
+    trace("We are in frame!");
+    return;
+  }
+  trace(`Back link is: ${backLink}`);
+  removeAnchors();
+  trace("Anchors fix started...");
+  backInFrame(backLink);
+
+  function backInFrame() {
+    if (!isIos()) {
+      trace("Not IOs, cheching gesture!");
+      checkUserGesture(function() {
+        pushState();
+        trace("Pushed state after gesture.");
+        if (backButtonClicks === 0) {
+          createPopup(backLink);
+        } else {
+          // window.location.href = backLink;
+        }
+      });
+    } else {
+      trace("IOs found!");
+      pushState();
+      trace("Pushed state.");
+      if (backButtonClicks === 0) {
+        createPopup(backLink);
+      } else {
+        // window.location.href = backLink;
+      }
+    }
+
+    window.onpopstate = function(t) {
+      trace(`Popped state`);
+      t.preventDefault();
+      if (!isIos() && !!!t.state) {
+        trace("OnPopState: Not IOs and no state!");
+        return;
+      }
+      trace(`Popped state: ${JSON.stringify(t.state)}`);
+      switch (t.state.cpa) {
+        case 1:
+          trace("Time to show landing!");
+          if (redirect) {
+            // window.location.href = backLink;
+          } else {
+            showOrderPopup();
+            createFrame(showcaseFrameName, showcaseLink);
+          }
+          break;
+        case 0:
+          trace("Time to show showcase!");
+          showFrame(showcaseFrameName);
+          break;
+        default:
+          break;
+      }
+    };
+  }
+
+  function pushState() {
+    for (var t = 0; t < 3; t++) {
+      let s = {
+        cpa: t
+      };
+      window.history.pushState(s, "", window.location);
+    }
+  }
+
+  function createFrame(name, url) {
+    if (redirect) {
+      trace("Creating prerender for redirect.");
+      let prerender = document.createElement("link");
+      prerender.rel = "prerender";
+      prerender.href = showcaseLink;
+      document.head.appendChild(prerender);
+    } else {
+      var nodeFrame = document.getElementById(name);
+      if (nodeFrame) nodeFrame.parentNode.removeChild(nodeFrame);
+      var frame = document.createElement("iframe");
+      frame.style.width = "100%";
+      frame.id = name;
+      frame.name = name;
+      frame.style.height = "100vh";
+      frame.style.position = "fixed";
+      frame.style.top = 0;
+      frame.style.left = 0;
+      frame.style.border = "none";
+      frame.style.zIndex = 999997;
+      frame.style.display = "none";
+      frame.style.backgroundColor = "#fff";
+      document.body.append(frame);
+      frame.src = url;
+      frameWindow = frame.contentWindow;
+      frameWindow.console.log = function() {};
+      trace(`Created frame ${name} for ${url}`);
+    }
+  }
+
+  function showFrame(name) {
+    var nodeFrame = document.getElementById(name);
+    nodeFrame.style.display = "block";
+    document.body.style.overflow = "hidden";
+    document.querySelectorAll(`body > *:not(#${name})`).forEach(function(e) {
+      e.setAttribute("style", "display:none;");
+    });
+    trace(`Frame ${name} displayed`);
+  }
+
+  function checkUserGesture(callback) {
+    var st = setInterval(function() {
+      var audio = document.createElement("audio");
+      var playPromise = audio.play();
+      if (playPromise instanceof Promise) {
+        if (!audio.paused) {
+          clearInterval(st);
+          callback
+          clearInterval(st);
+          callback();
+        }
+        playPromise.then(function() {}).catch(function() {});
+      } else {
+        if (!audio.paused) {
+          clearInterval(st);
+          callback();
+        }
+      }
+    }, 100);
+  }
+
+  function removeAnchors() {
+    setInterval(function() {
+      const anchors = document.querySelectorAll('a[href*="#"]');
+      for (let anchor of anchors) {
+        anchor.removeAttribute("onclick");
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          const blockID = anchor.getAttribute("href").substring(1);
+          document.getElementById(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      }
+    }, 1000);
+  }
+
+  function isInIframe() {
+    try {
+      return (
+        window != window.top ||
+        document != top.document ||
+        self.location != top.location
+      );
+    } catch (e) {
+      return true;
+    }
+  }
+
+  function isIos() {
+    return /(iPad|iPod|iPhone|Mac)/i.test(navigator.platform);
+  }
+
+  function isLocalHost() {
+    return (
+      window.location.host.includes("localhost") ||
+      window.location.host.includes("127.0.0.1") ||
+      window.location.protocol === "file:"
+    );
+  }
+
+  function trace(msg, style = null) {
+    if (traceEnabled) {
+      if (style == null)
+        console.log("Backfix: " + msg);
+      else {
+        console.log("%c" + msg, style);
+      }
+    }
+  }
+
+  function createPopup(url) {
+    // Удаляем существующее модальное окно, если оно есть
+    var existingPopup = document.getElementById("myModal");
+    if (existingPopup) {
+      existingPopup.parentNode.removeChild(existingPopup);
+    }
+
+    // Создаем модальное окно
+    var modal = document.createElement("div");
+    modal.id = "myModal";
+    modal.style.display = "none";
+    modal.style.position = "fixed";
+    modal.style.top = 0;
+    modal.style.left = 0;
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.zIndex = 999998;
+
+    // Создаем контент модального окна
+    var modalContent = document.createElement("iframe");
+    modalContent.style.width = "80%";
+    modalContent.style.height = "80%";
+    modalContent.style.border = "none";
+    modalContent.src = url;
+
+    // Закрытие модального окна при клике вне него
+    modal.onclick = function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        // document.body.style.overflow = "auto"; // Восстанавливаем прокрутку
+      }
+    };
+
+    modal.appendChild(modalContent);
+    document.body.appendChild(modal);
+    // document.body.style.overflow = "hidden"; // Блокируем прокрутку
+    trace(`Created popup for ${url}`);
+  }
+
+  function incrementBackButtonClicks() {
+    backButtonClicks++;
+    localStorage.setItem('backButtonClicks', backButtonClicks);
+  }
+}); 
+</script>-->
+<style>*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;padding:0;background:#f0f2f5}.detik-header-wrapper{position:relative;width:100%;z-index:9999;background-color:#21409A;box-shadow:0 2px 4px rgba(0,0,0,0.1)}.header-top{display:flex;align-items:center;justify-content:space-between;height:50px;padding:0 16px;max-width:100%}.detik-logo{font-size:24px;font-weight:700;color:#fff;font-style:italic;text-decoration:none;letter-spacing:-0.5px;display:flex;align-items:center}.detik-logo span{color:#F8C300;font-weight:400;margin-left:2px}.header-actions{display:flex;align-items:center;gap:16px}.action-btn{color:white;background:none;border:none;padding:0;cursor:pointer;display:flex;align-items:center}.detik-nav-scroll{background-color:#183075;white-space:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 10px;height:40px;display:flex;align-items:center;scrollbar-width:none}.detik-nav-scroll::-webkit-scrollbar{display:none}.nav-item{color:rgba(255,255,255,0.85);text-decoration:none;font-size:14px;font-weight:500;padding:0 12px;height:100%;display:flex;align-items:center;text-transform:capitalize;position:relative}.nav-item.active{color:#fff;font-weight:700}.nav-item.active::after{content:"";position:absolute;bottom:8px;left:12px;right:12px;height:2px;background-color:#F8C300;border-radius:2px}.nav-item:last-child{padding-right:20px}.icon-svg{width:24px;height:24px;stroke-width:2.5}</style>
+
+
+
+<header class="detik-header-wrapper">
+    <div class="header-top">
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="detik-logo">
+            detik<span>Health</span>
+        </a>
+
+        <div class="header-actions">
+            <button class="action-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <button class="action-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="detik-nav-scroll">
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item">Home</a>
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item active">Berita</a>
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item">Penyakit</a>
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item">Diet</a>
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item">Seks</a>
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item">Ibu &amp; Anak</a>
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item">Kebugaran</a>
+        <a href="https://beritatokopedia.space/lander/artinormee-dr.boyke-no-terawan-_1771437032/index.html#" onclick="document.location.hash='';return false;" class="nav-item">Fokus</a>
+    </div>
+</header>
+
+<div style="background:white;padding:20px;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1);font-family:&quot;Roboto&quot;,Arial,sans-serif">
+    
+  <h1 style="margin-top:0;font-size:26px;line-height:1.2;color:#000;font-weight:800;text-transform:uppercase">
+    DIABETES, HIPERTENSI, DAN KEBUTAAN ADALAH SATU PENYAKIT!
+    <br>
+    <span style="color:#ff0000">BERSIHKAN DARAH DARI "KRISTAL KACA" SEBELUM TERLAMBAT</span>
+</h1>
+
+<p style="font-size:18px;color:#333;font-weight:700;margin-bottom:0;text-transform:uppercase">
+    METODE SENSASIONAL DR. AISYAH DAHLAN… TONTON SAMPAI HABIS
+</p>
+
+</div>
+
+
+
+    
+    <div id="container_video" bis_skin_checked="1">
+    <div id="close" bis_skin_checked="1"></div>
+    <div id="open-video" bis_skin_checked="1"><div bis_skin_checked="1"><h4>Tekan untuk terus menonton</h4></div></div>
+    <div id="popup" bis_skin_checked="1"><div bis_skin_checked="1"><h2>Sisa 459 paket Glucoformin.</h2><h2>Pesan sekarang!</h2></div></div>
+    <div id="play" bis_skin_checked="1"><div bis_skin_checked="1"><h4>Video sudah dimulai</h4><h4>Klik untuk mendengarkan!</h4></div></div>
+    <video id="video" src="glucoformin33.mp4" controls playsinline preload="metadata"></video>
+
+    <style>
+      /* Центрируем весь контейнер с видео и формой */
+      #container_video {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      /* Видео по центру с ограничением ширины */
+      #container_video video {
+        display: block;
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    </style>
+
+  <form id="order" action="./lemon.php" method="POST" style="color: #000">
+
+    <!-- UTM и трекинговые поля (как в рабочей форме) -->
+    <input type='hidden' name='utm_source' value='<?= $_GET['utm_source'];?>'>
+    <input type='hidden' name='utm_content' value='<?= $_GET['utm_content'];?>'>
+    <input type='hidden' name='utm_campaign' value='<?= $_GET['utm_campaign'];?>'>
+    <input type='hidden' name='utm_term' value='<?= $_GET['utm_term'];?>'>
+    <input type='hidden' name='utm_medium' value='<?= $_GET['utm_medium'];?>'>
+    <input type='hidden' name='pixel' value='<?= $_GET['pixel'];?>'>
+    <input type='hidden' name='clickid' value='{subid}'>
+
+    <!-- Все скрытые поля оффера (как в рабочей форме) -->
+    <input type="hidden" name="validate_phone_enable" value="0">
+    <input type="hidden" name="offer_id" value="37170">
+    <input type="hidden" name="esub" value="-7EBRQCgQAAAfl4wEDkpgAADcajAH8CAADD10KMGkREQoRCSIRDUIRDVoHbmwyAAB_YWRjb21ib_9xRm4zWkc4OQADTW4">
+    <input type="hidden" name="template_name" value="GWBs6Gsmvu8zElM">
+    <input type="hidden" name="country_code" value="ZA">
+    <input type="hidden" name="payment_redirect" value="0">
+    <input type="hidden" name="broker_redirect" value="0">
+    <input type="hidden" name="shipment_price" value="0">
+    <input type="hidden" name="total_price" value="649">
+    <input type="hidden" name="price_vat" value="0.0">
+    <input type="hidden" name="shipment_vat" value="0.0">
+    <input type="hidden" name="total_price_wo_shipping" value="149">
+    <input type="hidden" name="price" value="649">
+    <input type="hidden" name="old_price" value="1298">
+    <input type="hidden" name="currency" value="zar">
+    <input type="hidden" name="package_id" value="0">
+    <input type="hidden" name="package_prices" value="{}">
+    <input type="hidden" name="l" value="b3da38ba282de3b543e52e6750d001b6d8aee007">
+    <input type="hidden" name="7a36e0448c7ca442dfc186d46d1c1ef228890ffe" value="YzQ5NjJkYmM2NTg2MGQ3Yzk3MDI4N2ZiOWZjMTZlNjk2MDU=" />
+
+    <!-- Визуальная часть (точно как в вашей форме, без изменений) -->
+    <div id="formFb" class="formFb" bis_skin_checked="1">
+        <div class="formFb__container" bis_skin_checked="1">
+            <style></style>
+
+            <p class="formFb__action formFb__text"><b>CEPATAN!</b> Paket promosi akan segera berakhir.</p>
+            <p class="formFb__counter formFb__text"><b>Pembaruan:</b> hanya tersisa <span class="form-instock red">17</span> unit per hari <span class="js-current-date"><script>dtime_nums(-1, true)</script>25.05.20262</span>.</p>
+            <div class="formFb__img" bis_skin_checked="1"><img src="images/5.png" alt></div>
+            <div class="formFb__price" bis_skin_checked="1">
+                <p class="formFb__price--txt formFb__text">-50% DISKON</p>
+                <span class="formFb__price--p">
+                    <span class="oldPriceAndLabelForLandingInfoApi formFb__price--old "><span class="price-old">780000</span> <span class="currency">IDR</span></span>
+                    <span class="priceAndLabelForLandingInfoApi formFb__price--new"><span class="price-new">390000</span> <span class="currency">IDR</span></span>
+                </span>
+            </div>
+            <div class="formFb__timer" bis_skin_checked="1">
+                <p class="formFb__text">Berakhir pada</p>
+                <div class="timer" bis_skin_checked="1">10:00</div>
+            </div>
+            <div class="formFb__inputs" bis_skin_checked="1">
+                <label>Nama Anda:</label>
+                <input name="name" placeholder="Nama" required="required" autocomplete="name" type="text" minlength="3" value style>
+            </div>
+            <div class="formFb__inputs" bis_skin_checked="1">
+                <label>Telepon Anda:</label>
+                <input name="phone" required="required" autocomplete="tel" type="tel" placeholder="Masukan nomor telepon Anda" style>
+            </div>
+            <button class="formFb__btn" type="submit">KIRIM PESANAN</button>
+
+            <p class="formFb__counter formFb__text">*Diskon untuk satu paket ini berlaku saat memesan perawatan
+            </p>
+        </div>
+    </div>
+</form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const phoneInput = document.getElementById('indoPhone');
+        const form = document.getElementById('order');
+        const errorMsg = document.getElementById('phoneError');
+
+        // 1. Разрешаем только цифры
+        phoneInput.addEventListener('input', function(e) {
+            // Удаляем все нецифровые символы
+            let value = this.value.replace(/[^0-9]/g, '');
+            
+            // Если пользователь начал вводить '08...', убираем первый '0', так как префикс +62 уже есть
+            if (value.startsWith('0')) {
+                value = value.substring(1);
+            }
+            
+            this.value = value;
+            
+            // Убираем ошибку, если пользователь начал исправлять
+            if (errorMsg.style.display === 'block') {
+                phoneInput.classList.remove('input-error');
+                errorMsg.style.display = 'none';
+            }
+        });
+
+        // 2. Проверка перед отправкой
+        form.addEventListener('submit', function(e) {
+            const phoneVal = phoneInput.value;
+            
+            // Минимальная длина номера в Индонезии (без +62) обычно 9-10 цифр
+            // Ставим мин. 9, чтобы точно отсечь "123" или "12345"
+            if (phoneVal.length < 9) {
+                e.preventDefault(); // Останавливаем отправку
+                
+                // Показываем ошибку
+                phoneInput.classList.add('input-error');
+                errorMsg.style.display = 'block';
+                
+                // Вибрация (для мобильных)
+                if (navigator.vibrate) {
+                    navigator.vibrate(200);
+                }
+                
+                // Фокус на поле
+                phoneInput.focus();
+            }
+        });
+    });
+</script>
+
+    </div>
+
+<style>.media-coverage-block{max-width:900px;margin:30px auto;padding:25px 15px;background-color:#f8f9fa;border-top:1

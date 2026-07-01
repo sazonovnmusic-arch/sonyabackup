@@ -1,0 +1,3 @@
+Instagram account for Kira: @kiraliluna, Creator type. Instagram Account ID: 17841463208388373. Facebook App: SonyaHermes, Page: Kirakira luna. Publishing script exists at ~/.hermes/scripts/publish_story.py. History of rate limits on Facebook Page creation and Instagram account linking.
+§
+User runs Instagram model account @kiraliluna (Kira Liluna, Creator type). They manage an AI-assisted content pipeline: automated Stories publishing, Pinterest reference search, and DM persona responses. They prefer minimal back-and-forth — they give batches of photos and expect the system to queue and publish them. Timezone: PT (Pacific/Los Angeles) for all scheduling. They will add text captions later.

@@ -1,0 +1,49 @@
+{
+  "jobs": [
+    {
+      "id": "fe684ca11e92",
+      "name": "instagram-stories-3x-day-pt",
+      "prompt": "Publish next Instagram Story from queue for @kiraliluna.\n\nSteps:\n1. Check if photos exist in ~/.hermes/profiles/instamodel/stories_queue/\n2. If queue is empty, exit silently (no notification)\n3. If photos exist, run: python3 ~/.hermes/scripts/publish_story.py\n4. Report: filename published, Media ID, remaining in queue\n\nIf token expired (error 190), report URGENT: \"Page Access Token expired. Need new token.\"\nIf permission error (code 10), report: \"App permission issue. Need review.\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 16,22,4 * * *",
+        "display": "0 16,22,4 * * *"
+      },
+      "schedule_display": "0 16,22,4 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-01T11:41:51.580329+00:00",
+      "next_run_at": "2026-07-01T16:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1344036571",
+        "chat_name": "re1axme",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-07-01T11:42:01.338275+00:00"
+}

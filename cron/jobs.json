@@ -1,0 +1,47 @@
+{
+  "jobs": [
+    {
+      "id": "9dd4ba84e3d3",
+      "name": "Server Watchdog",
+      "prompt": "\u041c\u043e\u043d\u0438\u0442\u043e\u0440\u0438\u043d\u0433 \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u044f \u0441\u0435\u0440\u0432\u0435\u0440\u0430. \u0421\u043e\u043e\u0431\u0449\u0430\u0439 \u0442\u043e\u043b\u044c\u043a\u043e \u043e \u043a\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u043e\u0442\u043a\u043b\u043e\u043d\u0435\u043d\u0438\u044f\u0445 \u0438\u043b\u0438 \u0435\u0441\u043b\u0438 \u0437\u0430 \u0434\u0435\u043d\u044c \u0431\u044b\u043b\u0438 \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u044b. \u0415\u0441\u043b\u0438 \u0441\u0435\u0440\u0432\u0435\u0440 \u0440\u0430\u0431\u043e\u0442\u0430\u043b \u043d\u043e\u0440\u043c\u0430\u043b\u044c\u043d\u043e \u2014 \u043f\u0440\u043e\u0441\u0442\u043e \u043a\u0440\u0430\u0442\u043a\u0438\u0439 \u0438\u0442\u043e\u0433: \u2705 \u0421\u0442\u0430\u0431\u0438\u043b\u044c\u043d\u043e. \u0421\u0430\u043c\u043e\u0441\u0442\u043e\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0443\u0434\u0430\u043b\u0435\u043d\u0438\u0435 \u0444\u0430\u0439\u043b\u043e\u0432 \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u043e.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "server_monitor.py",
+      "no_agent": true,
+      "enabled_toolsets": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 21 * * *",
+        "display": "0 21 * * *"
+      },
+      "schedule_display": "0 21 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 14
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-06-19T11:09:47.055766+00:00",
+      "next_run_at": "2026-07-01T21:00:00+00:00",
+      "last_run_at": "2026-06-30T21:00:49.358614+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1344036571",
+        "chat_name": "re1axme",
+        "thread_id": null
+      },
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-07-01T09:01:00.458779+00:00"
+}

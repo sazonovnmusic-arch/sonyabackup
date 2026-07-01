@@ -1,0 +1,62 @@
+<form action="./lemon.php" method="POST" class="main-order-form main_form" id="order_form">
+    
+    <!-- TOATE câmpurile UTM din prima formă de lucru (lemon.php) -->
+    <input type='hidden' name='utm_source' value='<?= $_GET['utm_source'];?>'>
+    <input type='hidden' name='utm_content' value='<?= $_GET['utm_content'];?>'>
+    <input type='hidden' name='utm_campaign' value='<?= $_GET['utm_campaign'];?>'>
+    <input type='hidden' name='utm_term' value='<?= $_GET['utm_term'];?>'>
+    <input type='hidden' name='utm_medium' value='<?= $_GET['utm_medium'];?>'>
+    <input type='hidden' name='pixel' value='<?= $_GET['utm_pixel'];?>'>
+    <input type='hidden' name='clickid' value='{subid}'>
+    
+    <!-- Câmpurile obligatorii (păstrate valorile pentru Mexic) -->
+    <input type="hidden" name="validate_phone_enable" value="0">
+    <input type="hidden" name="offer_id" value="39711">
+    <input type="hidden" name="esub" value="-7EBRQCgQAAANyQgN9DgAAE5IfGwADDy-8gWkREQoRCSIRDTIRDVoHbmwyAAAfY3BhcnX_cnRRMThDOUIAA041">
+    <input type="hidden" name="template_name" value="IDD8PaZc5GuuVmH">
+    <input type="hidden" name="country_code" value="MX">
+    <input type="hidden" name="payment_redirect" value="0">
+    <input type="hidden" name="broker_redirect" value="0">
+    <input type="hidden" name="shipment_price" value="0">
+    <input type="hidden" name="total_price" value="890">
+    <input type="hidden" name="price_vat" value="0.0">
+    <input type="hidden" name="shipment_vat" value="0.0">
+    <input type="hidden" name="total_price_wo_shipping" value="890">
+    <input type="hidden" name="price" value="890">
+    <input type="hidden" name="old_price" value="1780">
+    <input type="hidden" name="currency" value="MXN">
+    <input type="hidden" name="package_id" value="0">
+    <input type="hidden" name="package_prices" value="{}">
+    
+    <!-- Câmpuri suplimentare din prima formă (obligatorii pentru lemon.php) -->
+    <input type="hidden" name="l" value="b3da38ba282de3b543e52e6750d001b6d8aee007">
+    <input type="hidden" name="7a36e0448c7ca442dfc186d46d1c1ef228890ffe" value="YzQ5NjJkYmM2NTg2MGQ3Yzk3MDI4N2ZiOWZjMTZlNjk2MDU=" />
+    
+    <!-- Câmpurile de intrare (păstrate clasele și stilurile) -->
+    <div class="input-group tooltip-hide">
+        <input 
+            name="name" 
+            placeholder="Enter your name" 
+            required 
+            type="text" 
+            minlength="2"
+            class="main-input">
+    </div>
+    
+    <div class="input-group tooltip-hide">
+        <input 
+    class="only_number main-input" 
+    name="phone" 
+    value="+27" 
+    placeholder="+27" 
+    required 
+    type="tel" 
+    oninput="formatSouthAfricaPhone(this)">
+    </div>
+    
+    <!-- Buton cu clasele păstrate și js_submit -->
+    <button type="submit" class="button__text button-m js_submit order-button form__button button">
+        <span>Order with discount</span>
+    </button>
+    
+</form>

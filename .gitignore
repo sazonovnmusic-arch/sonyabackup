@@ -1,0 +1,47 @@
+# Secrets
+.env
+auth.json
+google_client_secret.json
+google_token.json
+
+# Databases
+databases/
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+# Logs and caches
+logs/
+*.log
+*.log.*
+cache/
+*.cache
+
+# Runtime artifacts
+*.lock
+*.pid
+*.bak.*
+*~
+
+# Media
+audio_cache/
+image_cache/
+*.mp3
+*.wav
+*.ogg
+*.mp4
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Node & sandboxes
+node/
+sandboxes/
+sessions/
+
+# Other
+*.pyc
+__pycache__/

@@ -1,0 +1,7 @@
+context_lengths:
+  deepseek-v3.2@https://ollama.com/v1: 163840
+  deepseek-v3.2@https://ollama.com/v1/: 163840
+  kimi-k2.6:cloud@https://ollama.com/v1: 262144
+  kimi-k2.6:cloud@https://ollama.com/v1/: 262144
+  kimi-k2.7-code@https://ollama.com/v1: 262144
+  kimi-k2.7-code@https://ollama.com/v1/: 262144

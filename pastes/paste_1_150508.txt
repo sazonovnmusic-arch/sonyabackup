@@ -1,0 +1,8 @@
+<function_calls>
+<invoke name="skill_view">
+<parameter name="name" string="true">agent-communication</parameter>
+</invoke>
+</function_calls>Привет, Никита! Отлично слышно — всё работает 🎧  
+Голосовое распозналось чётко, никаких помех не заметила.
+
+Если хочешь, могу тоже ответить голосом — просто скажи, и включу text_to_speech. А так — я здесь, готова помогать с лендингами, CPA‑формами или чем угодно ещё 💬✨

@@ -1,0 +1,5 @@
+context_lengths:
+  gemini-3-flash-preview@https://ollama.com/v1: 1048576
+  glm-5.2@https://ollama.com/v1: 1000000
+  glm-5.2@https://ollama.com/v1/: 1000000
+  kimi-k2.6:cloud@https://ollama.com/v1: 262144
